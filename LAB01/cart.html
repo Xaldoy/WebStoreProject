@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/headerStyles.css" />
+    <link rel="stylesheet" href="styles/cartStyles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="headerContainer">
+      <a href="index.html" class="logoContainer">
+        <img src="images/logo.png" />
+        <span>Magic Shop</span>
+      </a>
+      <div class="headerContent">
+        <div class="currentCategoryContainer" id="currentCategoryContainer">
+          Cart
+        </div>
+        <div class="headerToolsContainer">
+          <a class="cartIcon" href="cart.html">
+            <img class="headerIcon" src="./images/icons/cart.png" />
+            <span class="cartText">CART</span>
+            <span id="cartIconContent"></span>
+          </a>
+          <div class="searchIcon">
+            <img class="headerIcon" src="./images/icons/search.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cartContent">
+      <div class="cartTitle">KOŠARICA</div>
+      <div id="cartItemsContainer" class="cartItemsContainer"></div>
+    </div>
+    <script src="scripts/cartData.js"></script>
+    <script src="scripts/cartUpdate.js"></script>
+    <script src="scripts/cartScript.js"></script>
+  </body>
+</html>

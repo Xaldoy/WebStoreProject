@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/headerStyles.css" />
+    <link rel="stylesheet" href="styles/homeStyles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Magic Shop</title>
+  </head>
+
+  <body>
+    <div class="headerContainer">
+      <a href="index.html" class="logoContainer">
+        <img src="images/logo.png" />
+        <span>Magic Shop</span>
+      </a>
+      <div class="headerContent">
+        <div
+          class="currentCategoryContainer"
+          id="currentCategoryContainer"
+        ></div>
+        <div class="headerToolsContainer">
+          <a class="cartIcon" href="cart.html">
+            <img class="headerIcon" src="./images/icons/cart.png" />
+            <span class="cartText">CART</span>
+            <span id="cartIconContent"></span>
+          </a>
+          <div class="searchIcon">
+            <img class="headerIcon" src="./images/icons/search.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentContainer">
+      <div class="categoriesContainer">
+        <ul id="categoryList" class="categoryList"></ul>
+      </div>
+      <div class="aboutContainer">
+        <span class="aboutItem">Kontakt</span>
+        <span class="aboutItem">Newsletter</span>
+        <span class="aboutItem">Pretplati se</span>
+      </div>
+      <div id="headlineContainer" class="headlineContainer">
+        <div class="headlineTitle">Welcome...</div>
+      </div>
+      <div id="itemsContainer" class="itemsContainer"></div>
+    </div>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/cartData.js"></script>
+    <script src="scripts/cartUpdate.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
