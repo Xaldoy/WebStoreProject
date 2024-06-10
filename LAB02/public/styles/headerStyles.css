@@ -1,0 +1,143 @@
+.headerContainer,
+.headerContent,
+.currentCategoryContainer,
+.headerToolsContainer,
+.logoContainer,
+.cartIcon,
+.searchIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.headerContainer,
+.headerContent,
+.headerToolsContainer {
+  gap: 20px;
+}
+
+.headerContainer {
+  height: 100px;
+}
+
+.headerContainer,
+.currentCategoryContainer {
+  width: 100%;
+}
+
+.headerContent {
+  width: calc(100% - 220px);
+}
+
+.logoContainer,
+.currentCategoryContainer,
+.cartContent,
+.cartItem,
+.cartItemsContainer,
+.cartIcon,
+.searchIcon {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.logoContainer,
+.currentCategoryContainer,
+.headerContent,
+.headerToolsContainer,
+.logoContainer img {
+  height: 100%;
+}
+
+.logoContainer {
+  width: 200px;
+  padding: 6px;
+}
+
+.logoContainer,
+.cartIcon,
+.searchIcon {
+  background-color: rgba(163, 132, 96, 0.2);
+  text-decoration: none;
+  color: black;
+}
+
+.logoContainer:hover,
+.cartIcon:hover,
+.searchIcon:hover {
+  background-color: white;
+}
+
+.logoContainer img {
+  scale: 1.3;
+}
+
+.logoContainer span,
+.currentCategoryContainer {
+  font-size: 30px;
+  text-align: center;
+}
+
+.logoContainer span {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.headerToolsContainer {
+  padding: 0 20px;
+  width: 300px;
+}
+
+.cartIcon,
+.searchIcon {
+  padding: 6px 30px;
+  gap: 5px;
+}
+
+.headerIcon,
+.cartIcon,
+.searchIcon {
+  height: 60%;
+}
+
+@media (max-width: 1024px) {
+  .headerContainer {
+    height: 150px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headerContent {
+    width: 100%;
+  }
+
+  .headerToolsContainer {
+    width: 200px;
+  }
+
+  .headerContent,
+  .logoContainer {
+    height: calc(50% - 10px);
+  }
+
+  .logoContainer {
+    font-size: 25px;
+    width: 250px;
+  }
+
+  .logoContainer span {
+    width: 176px;
+  }
+
+  .currentCategoryContainer {
+    width: calc(100% - 220px);
+    font-size: min(30px, 4vw);
+  }
+
+  .cartIcon,
+  .searchIcon {
+    height: 80%;
+  }
+
+  .cartText {
+    display: none;
+  }
+}

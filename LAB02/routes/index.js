@@ -1,9 +1,13 @@
-var express = require('express');
+var express = require("express");
+const { data, cartData } = require("../data/mydata");
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get("/", (req, res) => {
+  res.render("home", {
+    data: data,
+    selectedCategory: data.categories[1],
+    cartData: cartData,
+  });
 });
 
 module.exports = router;

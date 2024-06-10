@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.circleIcon,
+.circleIconNonHoverable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  width: 2.1em;
+  height: 2.1em;
+  border-radius: 50%;
+}
+
+.circleIcon {
+  padding-bottom: 2px;
+}
+
+.circleIcon:hover {
+  background-color: #a38460;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  body,
+  html {
+    height: fit-content;
+  }
+}
