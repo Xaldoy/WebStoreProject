@@ -15,7 +15,9 @@ const GetApi = async (apiCall) => {
 };
 
 const GetCategories = async () => {
-  categories = await GetApi("http://localhost:3000/Products/GetAllCategories");
+  categories = await GetApi(
+    "http://localhost:3000/Categories/GetAllCategories"
+  );
   printCategories();
 };
 

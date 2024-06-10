@@ -5,6 +5,7 @@ const categoryController = {
     return data.categories.map((x) => ({
       categoryId: x.categoryId,
       name: x.name,
+      image: x.image,
     }));
   },
 };
